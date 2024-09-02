@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#"> <Details></Details>/active</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                <li class="nav-item active">
+                  <a class="nav-link" href="details.html">Details Page <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="home.html">Home Page</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="abilities.html">Abilities Page</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+    </header>
+    <div class="card-group">
+        <div class="card">
+          <img class="card-img-top" src='data:image/jpeg;base64,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' alt="Card image cap" height="200" width="80">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text"><h1>Pokémon Search</h1>
+                <input type="text" id="pokemonInput" placeholder="Enter Pokémon name or ID">
+                <button onclick="searchPokemon()">Search</button>
+                <div class="pokemon-info" id="pokemonInfo"></div></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="https://th.bing.com/th/id/OIP.c0EzLFbaYyzNa0cPiNt73gHaFF?w=241&h=180&c=7&r=0&o=5&pid=1.7 " alt="Card image cap" height="200" width="80">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text"><h1>Pokémon Search</h1>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe molestiae sapiente accusantium ullam itaque voluptate eum eaque libero impedit aliquid aut expedita, eos rem iure aliquam neque modi. Autem, exercitationem!</div></p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+        <div class="card">
+          <img class="card-img-top" src="https://th.bing.com/th/id/OIP.lRqWvfB05r5jeNA_9fyV2QHaEK?w=241&h=180&c=7&r=0&o=5&pid=1.7" alt="Card image cap" height="400" width="200">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text"><h1>Pokémon Search</h1>
+               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Adipisci, nisi culpa iusto cumque soluta nobis quibusdam praesentium commodi delectus quis animi illo aliquam temporibus doloremque. Nulla, quam optio! Rem, quia?</p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Last updated 3 mins ago</small>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+           <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui facere nemo nihil, laboriosam, asperiores autem pariatur dolor nam ea dicta fuga quasi atque quia quos nulla distinctio nisi adipisci maxime?</p>
+           
+        </div>
+          <div class="col-sm">
+            <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam rerum iste numquam ab voluptatem. Animi, voluptatem quod. Sed amet voluptas esse officiis ex consequatur alias necessitatibus, temporibus explicabo eos pariatur.</p>
+       
+          </div>
+          <div class="col-sm">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio possimus sit quas perspiciatis officia, facilis quo, nisi illo cum quis pariatur nulla ipsum ut fugiat blanditiis, totam illum vel facere.</p>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="#">More About Pokemon</a></li>
+                        <li><a href="#">Our Services</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Affiliate Program</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Shipping</a></li>
+                        <li><a href="#">Returns</a></li>
+                        <li><a href="#">Order Status</a></li>
+                        <li><a href="#">Payment Options</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Pokemon Shop</h4>
+                    <ul>
+                        <li><a href="#">Order Pokemon Socks</a></li>
+                        <li><a href="#">Order Pokemon Watch</a></li>
+                        <li><a href="#">Order Pokemon Cards</a></li>
+                        <li><a href="#">Updated Pokemon News</a></li>
+                    </ul>
+                </div>
+             
+            </div>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    
+</body>
+</html>
